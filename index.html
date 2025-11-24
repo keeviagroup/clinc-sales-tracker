@@ -769,7 +769,7 @@
             
             let query = supabase
                 .from('sales_reports')
-                .select('*, user_profiles(name)')
+                .select('*')
                 .order('date', { ascending: false });
 
             if (filterClinic !== 'all') {
@@ -1135,3 +1135,4 @@
     </script>
 </body>
 </html>
+
